@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration System">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Student Registration System</h1>
+            <p>A seamless way to manage student records including registration, editing, and deletion of entries.</p>
+        </div>
+
+        <!-- Left Section: Form for Adding Students -->
+        <div class="left">
+            <h2>Register New Student</h2>
+            <form id="record-form">
+                <input type="text" id="name" placeholder="Student Name" required />
+                <input type="text" id="student-id" placeholder="Student ID" required />
+                <input type="number" id="contact-no" placeholder="Contact No." required />
+                <input type="text" id="email" placeholder="Email ID" required />
+
+                <!-- Hidden input to store index when editing records -->
+                <input type="hidden" id="edit-index" value="-1" />
+                <button type="submit">Add Record</button>
+            </form>
+        </div>
+
+        <!-- Right Section: Display Records in a Table -->
+        <div class="right">
+            <h2>Records</h2>
+            <div class="scrollable-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Id</th>
+                            <th>Contact No.</th>
+                            <th>Email ID</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Table body where student records will be displayed dynamically -->
+                    <tbody id="record-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file to handle form submissions, data storage, and table operations -->
+    <script src="script.js"></script>
+</body>
+</html>
