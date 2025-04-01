@@ -1,0 +1,149 @@
+/* 
+  Main Body Styling
+  - Uses Flexbox to center content
+  - Full viewport height for a balanced layout
+  - Background gradient for a modern look
+*/
+body {
+    font-family: Arial, sans-serif; /* Clean and readable font */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    background-image: linear-gradient(45deg, #616a72, #bdc3c7); /* Gradient background */
+}
+
+/* 
+  Container Styling
+  - Flexible layout for responsive design
+  - Adds a subtle shadow effect
+*/
+.container {
+    display: flex; /* Enables a flexible layout */
+    flex-wrap: wrap; /* Allows elements to wrap if necessary */
+    max-width: 900px; /* Restricts maximum width */
+    margin: 0 auto; /* Centers container */
+    border: 1px solid #ccc; /* Light border for separation */
+    padding: 20px; /* Adds spacing inside the container */
+    background-color: white; /* Clean white background */
+    border-radius: 10px; /* Softens corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* 
+  Header Styling
+  - Centers text
+  - Adds space below header for readability
+*/
+.header {
+    text-align: center; /* Centers text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.header h1 {
+    color: black; /* Dark color for contrast */
+}
+
+.header p {
+    font-size: 1.2em; /* Slightly larger text for emphasis */
+    color: black; /* Soft gray text color */
+    margin-top: 5px; /* Space between title and description */
+}
+
+/* 
+  Left and Right Sections
+  - Uses Flexbox for equal distribution
+*/
+.left, .right {
+    flex: 1; /* Distributes equal space */
+    padding: 10px; /* Adds spacing */
+}
+
+/* Adds a divider between left and right sections */
+.right {
+    border-left: 1px solid #ccc;
+}
+
+/* 
+  Headings Styling
+  - Centers all heading text
+*/
+h1, h2 {
+    text-align: center;
+}
+
+/* 
+  Input Fields Styling
+  - Applies uniform width and padding
+  - Adds rounded borders for a smooth look
+*/
+input[type='text'], input[type='number'], input[type='email'] {
+    width: calc(100% - 22px); /* Adjusts width to fit inside padding */
+    padding: 10px; /* Adds spacing inside input */
+    margin-bottom: 10px; /* Adds space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Soft corners */
+}
+
+/* 
+  Button Styling
+  - Uses orange color for high visibility
+  - Adds hover effect for user interaction
+*/
+button {
+    padding: 10px 20px; /* Comfortable button size */
+    background-color: orange; /* Bright orange color */
+    color: white; /* White text for contrast */
+    border: none; /* Removes default border */
+    border-radius: 4px; /* Smooth button corners */
+    cursor: pointer; /* Shows pointer on hover */
+    display: block; /* Ensures full-width placement */
+    margin: 0 auto; /* Centers the button */
+}
+
+/* 
+  Button Hover Effect
+  - Darkens color slightly for feedback
+*/
+button:hover {
+    background-color: darkorange;
+}
+
+/* 
+  Scrollable Table Container
+  - Restricts max height to prevent overflow
+  - Enables vertical scrolling
+*/
+.scrollable-table {
+    max-height: 300px; /* Limits table height */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* 
+  Table Styling
+  - Makes table full-width
+  - Collapses borders for a cleaner look
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 
+  Table Header and Data Cell Styling
+  - Ensures spacing and border consistency
+*/
+th, td {
+    border: 1px solid #ccc; /* Light border for clarity */
+    padding: 8px; /* Adds space inside cells */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* 
+  Table Header Styling
+  - Applies a light blue background
+  - Differentiates headers from data rows
+*/
+th {
+    background-color: lightblue;
+}
